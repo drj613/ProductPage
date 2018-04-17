@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Best Products</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+
+
+</head>
+<body>
+    <!-- appear when user starts scrolling on larger viewports
+          figure out how to implement a working burger menu! -->
+    <!-- <div class="navbar">
+        <span>BrandLogo </span><span>Items </span><span>Colors </span>
+    </div> -->
+    <div class="fullLength" id="hero">
+        <!-- cover image; parallax? -->
+        <p id="heroText">This div is 100% of the screen length and width because that makes it easier to scale.</p>
+    </div>
+
+    <a id="premiumProductAnchor" href="#">
+    <div class="fullLength" id="premiumProduct">
+        <!-- flex-direction: column, switch to row starting at md -->
+        <div id="premiumTextDiv">
+            <p>This is a description of the <i>newest</i> product and it will take up 60% on md/sm/xs</p>
+            <p>Maybe there will even be a secondary paragraph</p>
+            <p>Holy fuck, AND a tertiary? Craziness.</p>
+        </div>
+        <div id="premiumImageDiv">
+            <img id="premiumImage" src="http://via.placeholder.com/200x200">
+        </div>
+    </div>
+    </a>
+
+    <div class="fullLength" id="cardHolder">
+        <!-- flex-direction:column and switch to row starting at md 
+             white bg, grey cards -->
+        <div class="card">
+            <p>Of the 100vw available from #cardHolder, this will be 30vw on lg viewports and 80vw on md/sm/xs</p>
+        </div>
+        <div class="card">
+            <p>This will also be 30vw, and will have 2.5vw on either side</p>
+        </div>
+        <div class="card">
+            <p>Oh what do you know, another 30vw on large screens.</p>
+        </div>
+    </div>
+
+    <div class="fullLength" id="infoSlide">
+        <!-- Slide in from left -->
+        <div class="infoBar" id="slideInLeft">
+            <p>Here's some info</p>
+        </div>
+        <!-- pop in -->
+        <div class="infoBar" id="popIn">
+            <p>Whoa! More info</p>
+        </div>
+        <!-- Slide in from bottom -->
+        <div class="infoBar" id="slideInRight">
+            <p>You get the drill.</p>
+        </div>
+    </div>
+    
+    <!-- underwater background; sand on bottom, water and rising bubbles
+         .infoBubbles styled like bubbles in background -->
+    <div class="fullLength" id="underWater">
+        <!-- vertical on larger viewports -->
+        <div class="infoBubble leftBubble" id="bub1">
+            <p>img with text overlay</p>
+        </div>
+        <div class="infoBubble rightBubble" id="bub2">
+            <p>img with text overlay</p>
+        </div>
+        <div class="infoBubble leftBubble" id="bub3">
+            <p>img with text overlay</p>
+        </div>
+        <!-- div for sand (either separate image, empty space, or a solid cover over underwater BG) -->
+    </div>
+
+
+    <div class="footer">
+        <p>Created by <a href="https://www.linkedin.com/in/drj613/">Daniel John</a></p>
+    </div>
+</body>
+</html>
