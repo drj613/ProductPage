@@ -7,8 +7,8 @@
     <title>The Best Products</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
-
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quando|Merriweather|Montserrat">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 <body>
     <!-- appear when user starts scrolling on larger viewports
@@ -25,9 +25,8 @@
     <div class="fullLength" id="premiumProduct">
         <!-- flex-direction: column, switch to row starting at md -->
         <div id="premiumTextDiv">
-            <p>This is a description of the <i>newest</i> product and it will take up 60% on md/sm/xs</p>
-            <p>Maybe there will even be a secondary paragraph</p>
-            <p>Holy fuck, AND a tertiary? Craziness.</p>
+            <h1 class="primary">This is a description of the <i>newest</i> product</h1>
+            <p class="secondary">This is a secondary paragraph</p>
         </div>
         <div id="premiumImageDiv">
             <img id="premiumImage" src="http://via.placeholder.com/200x200">
@@ -51,16 +50,16 @@
 
     <div class="fullLength" id="infoSlide">
         <!-- Slide in from left -->
-        <div class="infoBar" id="slideInLeft">
-            <p>Here's some info</p>
+        <div class="infoBar primary" id="slideInLeft">
+            <p>This info slides in from the left.</p>
         </div>
         <!-- pop in -->
-        <div class="infoBar" id="popIn">
-            <p>Whoa! More info</p>
+        <div class="infoBar primary" id="popIn">
+            <p>This info pops in.</p>
         </div>
         <!-- Slide in from bottom -->
-        <div class="infoBar" id="slideInRight">
-            <p>You get the drill.</p>
+        <div class="infoBar primary" id="slideInRight">
+            <p>This info slides in from the right.</p>
         </div>
     </div>
     
@@ -68,13 +67,13 @@
          .infoBubbles styled like bubbles in background -->
     <div class="fullLength" id="underWater">
         <!-- vertical on larger viewports -->
-        <div class="infoBubble leftBubble" id="bub1">
+        <div class="infoBubble leftBubble secondary" id="bub1">
             <p>img with text overlay</p>
         </div>
-        <div class="infoBubble rightBubble" id="bub2">
+        <div class="infoBubble rightBubble secondary" id="bub2">
             <p>img with text overlay</p>
         </div>
-        <div class="infoBubble leftBubble" id="bub3">
+        <div class="infoBubble leftBubble secondary" id="bub3">
             <p>img with text overlay</p>
         </div>
         <!-- div for sand (either separate image, empty space, or a solid cover over underwater BG) -->
