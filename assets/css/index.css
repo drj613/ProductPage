@@ -31,7 +31,7 @@ html, body {
     align-items: center;
     justify-content: center;
     font-family: 'Quando', serif;
-    background: linear-gradient(rgb(29, 104, 28), white);
+    background: linear-gradient(rgb(0, 100, 200), white);
     /* throw an image in here */
 }
     #heroText{
@@ -141,15 +141,25 @@ html, body {
         display: inherit;
         flex-direction: inherit;
         justify-content: flex-end;
+        text-align: center;
+        background-position: center;
+        background-size: cover;
         margin-bottom: 3rem;
         border-radius: 50%;
         height: 10rem;
+        width: 10rem;
         box-sizing: border-box;
         border: solid thin rgb(0, 128, 128);
-        background-color: rgba(142, 209, 240, 0.6);
-        background-position: center;
-        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+        box-shadow: inset 0px 10px 30px 5px rgba(142, 209, 240, 0.6);
     }
+        .infoBubble > p {
+            margin-bottom: 1.5rem;
+            color: cornflowerblue;
+            text-shadow: 0px 0px 0px black;
+            border: solid thin grey;
+            border-radius: 5px;
+            background: gainsboro;
+        }
     .leftBubble{
         margin-right: 5rem;
         animation: side-side-left 3s ease-in-out infinite;
@@ -157,9 +167,16 @@ html, body {
     .rightBubble{
         margin-left: 5em;
         animation: side-side-right 3s ease-in-out infinite;
-
     }
-
+    #bub1 {
+        background-image: url("../img/snorkel.jpg");
+    }
+    #bub2{
+        background-image: url("../img/tanks.jpg");
+    }
+    #bub3{
+        background-image: url("../img/watch.jpg");
+    }
 
 @keyframes side-side-left{
     0% {
